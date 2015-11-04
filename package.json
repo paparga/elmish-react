@@ -1,7 +1,7 @@
 {
   "name": "elmish-react",
-  "version": "0.0.3",
-  "description": "My elmish attemp with mini-signals",
+  "version": "0.0.5",
+  "description": "My elmish React attempt with mini-signals",
   "main": "dist/bundle.js",
   "dependencies": {
     "mini-signals": "^1.1.0",
@@ -24,10 +24,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/gaearon/react-elmish-example.git"
+    "url": "https://github.com/paparga/elmish-react.git"
   },
   "bugs": {
-    "url": "https://github.com/gaearon/react-elmish-example/issues"
+    "url": "https://github.com/paparga/elmish-react/issues"
   },
   "scripts": {
     "clean": "rimraf dist",
