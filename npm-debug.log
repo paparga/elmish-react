@@ -1,0 +1,100 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.14.4
+3 info using node@v4.1.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/pablo/workspace/elm-js',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/pablo/.npm/elmish-react/0.0.1/package.tgz not in flight; packing
+9 verbose tar pack [ '/home/pablo/.npm/elmish-react/0.0.1/package.tgz',
+9 verbose tar pack   '/home/pablo/workspace/elm-js' ]
+10 verbose tarball /home/pablo/.npm/elmish-react/0.0.1/package.tgz
+11 verbose folder /home/pablo/workspace/elm-js
+12 info prepublish elmish-react@0.0.1
+13 verbose addLocalTarball adding from inside cache /home/pablo/.npm/elmish-react/0.0.1/package.tgz
+14 silly cache afterAdd elmish-react@0.0.1
+15 verbose afterAdd /home/pablo/.npm/elmish-react/0.0.1/package/package.json not in flight; writing
+16 verbose afterAdd /home/pablo/.npm/elmish-react/0.0.1/package/package.json written
+17 silly publish { name: 'elmish-react',
+17 silly publish   version: '0.0.1',
+17 silly publish   description: 'My elmish attemp with mini-signals',
+17 silly publish   main: 'dist/bundle.js',
+17 silly publish   dependencies:
+17 silly publish    { 'mini-signals': '^1.1.0',
+17 silly publish      react: '^0.14.2',
+17 silly publish      'react-dom': '^0.14.2' },
+17 silly publish   devDependencies:
+17 silly publish    { 'babel-core': '^5.4.7',
+17 silly publish      'babel-loader': '^5.1.2',
+17 silly publish      express: '^4.13.3',
+17 silly publish      rimraf: '^2.4.3',
+17 silly publish      webpack: '^1.9.6',
+17 silly publish      'webpack-dev-middleware': '^1.2.0' },
+17 silly publish   keywords: [ 'react', 'elm', 'architecture', 'example' ],
+17 silly publish   scripts:
+17 silly publish    { clean: 'rimraf dist',
+17 silly publish      'build:webpack': 'NODE_ENV=production webpack --config webpack.config.prod.js',
+17 silly publish      build: 'npm run clean && npm run build:webpack',
+17 silly publish      publish: 'npm run build && mkdir -p dist && cp index.html dist && cd dist && git init && git commit --allow-empty -m \'update site\' && git checkout -b gh-pages && touch .nojekyll && git add . && git commit -am \'update site\' && git push git@github.com:paparga/elmish-react gh-pages --force',
+17 silly publish      start: 'node devServer.js' },
+17 silly publish   author: { name: 'Pablo Parga' },
+17 silly publish   license: 'MIT',
+17 silly publish   readme: 'Elmish React attempt with Mini-signals\n=====================\n\nThis is my personal attempt with [Elm Architecture](https://github.com/evancz/elm-architecture-tutorial/)\n\n## License\n\nMIT\n',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: 'a32898d991d8cb887f878e0d77306214cb438ca5',
+17 silly publish   _id: 'elmish-react@0.0.1',
+17 silly publish   _shasum: '9689960e74e78b44c1affc291281f2ed2e2cd430',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name elmish-react
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/elmish-react
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading /home/pablo/.npm/elmish-react/0.0.1/package.tgz
+25 verbose request uri https://registry.npmjs.org/elmish-react
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 10:31:26 PM
+28 verbose request using bearer token for auth
+29 verbose request id cbd7c5bb002c2871
+30 http request PUT https://registry.npmjs.org/elmish-react
+31 http 200 https://registry.npmjs.org/elmish-react
+32 verbose request invalidating /home/pablo/.npm/registry.npmjs.org/elmish-react on PUT
+33 info publish elmish-react@0.0.1
+34 verbose unsafe-perm in lifecycle true
+35 info elmish-react@0.0.1 Failed to exec publish script
+36 verbose stack Error: elmish-react@0.0.1 publish: `npm run build && mkdir -p dist && cp index.html dist && cd dist && git init && git commit --allow-empty -m 'update site' && git checkout -b gh-pages && touch .nojekyll && git add . && git commit -am 'update site' && git push git@github.com:paparga/elmish-react gh-pages --force`
+36 verbose stack Exit status 128
+36 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:214:16)
+36 verbose stack     at emitTwo (events.js:87:13)
+36 verbose stack     at EventEmitter.emit (events.js:172:7)
+36 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+36 verbose stack     at emitTwo (events.js:87:13)
+36 verbose stack     at ChildProcess.emit (events.js:172:7)
+36 verbose stack     at maybeClose (internal/child_process.js:818:16)
+36 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+37 verbose pkgid elmish-react@0.0.1
+38 verbose cwd /home/pablo/workspace/elm-js
+39 error Linux 4.2.0-16-generic
+40 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+41 error node v4.1.2
+42 error npm  v2.14.4
+43 error code ELIFECYCLE
+44 error elmish-react@0.0.1 publish: `npm run build && mkdir -p dist && cp index.html dist && cd dist && git init && git commit --allow-empty -m 'update site' && git checkout -b gh-pages && touch .nojekyll && git add . && git commit -am 'update site' && git push git@github.com:paparga/elmish-react gh-pages --force`
+44 error Exit status 128
+45 error Failed at the elmish-react@0.0.1 publish script 'npm run build && mkdir -p dist && cp index.html dist && cd dist && git init && git commit --allow-empty -m 'update site' && git checkout -b gh-pages && touch .nojekyll && git add . && git commit -am 'update site' && git push git@github.com:paparga/elmish-react gh-pages --force'.
+45 error This is most likely a problem with the elmish-react package,
+45 error not with npm itself.
+45 error Tell the author that this fails on your system:
+45 error     npm run build && mkdir -p dist && cp index.html dist && cd dist && git init && git commit --allow-empty -m 'update site' && git checkout -b gh-pages && touch .nojekyll && git add . && git commit -am 'update site' && git push git@github.com:paparga/elmish-react gh-pages --force
+45 error You can get their info via:
+45 error     npm owner ls elmish-react
+45 error There is likely additional logging output above.
+46 verbose exit [ 1, true ]
