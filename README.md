@@ -2,6 +2,7 @@ Elmish React attempt with Mini-signals
 =====================
 
 This is my personal attempt with [Elm Architecture](https://github.com/evancz/elm-architecture-tutorial/)
+
 Inspired in Dan Abramov's [attempt](https://github.com/gaearon/react-elmish-example)
 
 ## Running
